@@ -124,6 +124,11 @@ class LoginViewController: UIViewController {
 
         loginButton.backgroundColor = UIColor.darkTrojanRed
         loginButton.setTitle("Register", for: .normal)
+        loginButton.layer.cornerRadius = 5
+        loginButton.layer.shadowColor = UIColor(red:0.85, green:0.40, blue:0.10, alpha:1.00).cgColor
+        loginButton.layer.shadowOffset =  CGSize(width: 0, height: 12)
+        loginButton.layer.shadowRadius = 16
+        loginButton.layer.shadowOpacity = 0.6
         loginButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(loginButton)
         
