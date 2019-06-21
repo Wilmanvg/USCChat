@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>582363577485-infs10u8435gc93j2hg5970pv2gvelid.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.582363577485-infs10u8435gc93j2hg5970pv2gvelid</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCGctZSn-8fOkCz5gB9mXACWqCq_T-B1zk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>582363577485</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>usc.willygarcia.USCChat</string>
+	<key>PROJECT_ID</key>
+	<string>uscchat</string>
+	<key>STORAGE_BUCKET</key>
+	<string>uscchat.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:582363577485:ios:418fe27d350e2e57</string>
+	<key>DATABASE_URL</key>
+	<string>https://uscchat.firebaseio.com</string>
+</dict>
+</plist>
