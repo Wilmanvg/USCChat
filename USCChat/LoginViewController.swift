@@ -11,6 +11,7 @@
 // - Not happy with the gradient color
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
     
@@ -138,6 +139,48 @@ class LoginViewController: UIViewController {
         loginButton.widthAnchor.constraint(equalTo: inputsContainerView.widthAnchor).isActive = true
         loginButton.heightAnchor.constraint(equalToConstant: 50 ).isActive = true
         loginButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
+        
+        // Set up target for registering
+        loginButton.addTarget(self, action: #selector(handleRegister), for: .touchUpInside)
+    }
+    
+    @objc func handleRegister() {
+        
+        // Unwraps optionals and stores them in variables
+        guard let email = emailTextField.text, let password = passwordTextField.text, let name = nameTextField.text
+            else{
+                print("Was not able to extract email or password")
+                return
+        }
+        
+        // Creates user with stored parameters, outputs error if encountered
+        Auth.auth().createUser(withEmail: email, password: password, completion: {(authResult, error) in
+            if error != nil {
+                print(error!)
+                return
+            }
+            
+            // Stores current users UID in variable
+            guard let userID = Auth.auth().currentUser?.uid else {
+                print("User ID was not able to be retrieved")
+                return
+            }
+        
+            // Succesffully authenticated user
+            let ref = Database.database().reference()
+            
+            // Creates a child node named "Users" and within users another node for the UID where everything
+            // will be nested under.
+            let usersRef = ref.child("Users").child(userID)
+            let values = ["name": name, "email": email]
+            usersRef.updateChildValues(values, withCompletionBlock: {(err, ref) in
+                if err != nil {
+                    print(err!)
+                    return
+                }
+                print("Saved user successfully into Firebase DB")
+            })
+        })
     }
     
     func setUpImageView(){
@@ -151,9 +194,5 @@ class LoginViewController: UIViewController {
         mainImage.bottomAnchor.constraint(equalTo: inputsContainerView.topAnchor, constant: -12).isActive = true
         mainImage.widthAnchor.constraint(equalToConstant: 150).isActive = true
         mainImage.heightAnchor.constraint(equalToConstant: 150).isActive = true
-
-        
     }
-    
-    
 }

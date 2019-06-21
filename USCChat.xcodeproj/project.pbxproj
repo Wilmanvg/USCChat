@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73F3DF18F7189E511A3FFD6B /* Pods_USCChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5584027DA0DB39ED03120438 /* Pods_USCChat.framework */; };
 		B83EBE4222A9E4EA000B5B51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83EBE4122A9E4EA000B5B51 /* AppDelegate.swift */; };
 		B83EBE4422A9E4EA000B5B51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83EBE4322A9E4EA000B5B51 /* ViewController.swift */; };
 		B83EBE4722A9E4EA000B5B51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83EBE4522A9E4EA000B5B51 /* Main.storyboard */; };
@@ -16,11 +17,12 @@
 		B8F9D83422BBB64F00883F6C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F9D83322BBB64F00883F6C /* LoginViewController.swift */; };
 		B8F9D83622BBB67D00883F6C /* UIView+Trojan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F9D83522BBB67D00883F6C /* UIView+Trojan.swift */; };
 		B8F9D83822BBB81D00883F6C /* UIColor+Troajn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F9D83722BBB81D00883F6C /* UIColor+Troajn.swift */; };
-		F433992C46F42CF101768C92 /* Pods_USCChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC8B8467C3624A7E593DEC4 /* Pods_USCChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		89C869888C032908C2EE9752 /* Pods-USCChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USCChat.release.xcconfig"; path = "Target Support Files/Pods-USCChat/Pods-USCChat.release.xcconfig"; sourceTree = "<group>"; };
+		26C35D414E117D272B9E8733 /* Pods-USCChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USCChat.release.xcconfig"; path = "Target Support Files/Pods-USCChat/Pods-USCChat.release.xcconfig"; sourceTree = "<group>"; };
+		5584027DA0DB39ED03120438 /* Pods_USCChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_USCChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EC3FF2473E13E9972D16DBE /* Pods-USCChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USCChat.debug.xcconfig"; path = "Target Support Files/Pods-USCChat/Pods-USCChat.debug.xcconfig"; sourceTree = "<group>"; };
 		B83EBE3E22A9E4EA000B5B51 /* USCChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = USCChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83EBE4122A9E4EA000B5B51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B83EBE4322A9E4EA000B5B51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,8 +34,6 @@
 		B8F9D83322BBB64F00883F6C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B8F9D83522BBB67D00883F6C /* UIView+Trojan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Trojan.swift"; sourceTree = "<group>"; };
 		B8F9D83722BBB81D00883F6C /* UIColor+Troajn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Troajn.swift"; sourceTree = "<group>"; };
-		CBC8B8467C3624A7E593DEC4 /* Pods_USCChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_USCChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2E413DA72888E5334891709 /* Pods-USCChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USCChat.debug.xcconfig"; path = "Target Support Files/Pods-USCChat/Pods-USCChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,26 +41,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F433992C46F42CF101768C92 /* Pods_USCChat.framework in Frameworks */,
+				73F3DF18F7189E511A3FFD6B /* Pods_USCChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		405112144FC8322685793025 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CBC8B8467C3624A7E593DEC4 /* Pods_USCChat.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		B33A2DD4CFA48B64A953AFA2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F2E413DA72888E5334891709 /* Pods-USCChat.debug.xcconfig */,
-				89C869888C032908C2EE9752 /* Pods-USCChat.release.xcconfig */,
+				9EC3FF2473E13E9972D16DBE /* Pods-USCChat.debug.xcconfig */,
+				26C35D414E117D272B9E8733 /* Pods-USCChat.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -71,7 +63,7 @@
 				B83EBE4022A9E4EA000B5B51 /* USCChat */,
 				B83EBE3F22A9E4EA000B5B51 /* Products */,
 				B33A2DD4CFA48B64A953AFA2 /* Pods */,
-				405112144FC8322685793025 /* Frameworks */,
+				BFA28F5CBC4D6709229B1764 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +100,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		BFA28F5CBC4D6709229B1764 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5584027DA0DB39ED03120438 /* Pods_USCChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,11 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B83EBE5022A9E4EE000B5B51 /* Build configuration list for PBXNativeTarget "USCChat" */;
 			buildPhases = (
-				5DB82012BA2A96738AD8D000 /* [CP] Check Pods Manifest.lock */,
+				B1C4B3D704ED41033578E936 /* [CP] Check Pods Manifest.lock */,
 				B83EBE3A22A9E4EA000B5B51 /* Sources */,
 				B83EBE3B22A9E4EA000B5B51 /* Frameworks */,
 				B83EBE3C22A9E4EA000B5B51 /* Resources */,
-				26396D9B70830D084282B456 /* [CP] Embed Pods Frameworks */,
+				A3AD369D531144EA880385D9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,7 +178,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		26396D9B70830D084282B456 /* [CP] Embed Pods Frameworks */ = {
+		A3AD369D531144EA880385D9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -195,7 +195,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-USCChat/Pods-USCChat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5DB82012BA2A96738AD8D000 /* [CP] Check Pods Manifest.lock */ = {
+		B1C4B3D704ED41033578E936 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -372,7 +372,7 @@
 		};
 		B83EBE5122A9E4EE000B5B51 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2E413DA72888E5334891709 /* Pods-USCChat.debug.xcconfig */;
+			baseConfigurationReference = 9EC3FF2473E13E9972D16DBE /* Pods-USCChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -391,7 +391,7 @@
 		};
 		B83EBE5222A9E4EE000B5B51 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C869888C032908C2EE9752 /* Pods-USCChat.release.xcconfig */;
+			baseConfigurationReference = 26C35D414E117D272B9E8733 /* Pods-USCChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
